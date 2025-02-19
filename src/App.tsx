@@ -4,6 +4,7 @@ import Hero from "./components/Hero/Hero.tsx";
 import Expertise from "./components/Expertise/Expertise.tsx";
 import Timeline from "./components/Timeline/Timeline.tsx";
 import {Container} from "@mui/material";
+import Footer from "./components/Footer/Footer.tsx";
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
         <Hero />
         <Expertise />
         <Timeline />
+        <Footer />
     </Container>
   )
 }
