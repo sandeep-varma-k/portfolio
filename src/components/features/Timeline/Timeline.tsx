@@ -6,7 +6,7 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 
 
-import profile from '../../data/profile.json';
+import profile from '../../../data/profile.json';
 import {Avatar, Container, Stack, Typography} from "@mui/material";
 import Divider from "@mui/material/Divider";
 
