@@ -24,7 +24,7 @@ function Expertise() {
     return (
         <Container id="expertise">
             <Stack>
-                <Typography variant={"h4"} pb={4}>Expertise</Typography>
+                <Typography variant={"h4"} pb={4} pt={8}>Expertise</Typography>
 
                 <Grid container spacing={6}
                     >
@@ -37,9 +37,9 @@ function Expertise() {
                                 <FontAwesomeIcon icon={icon} size="3x"/>
                                 <Typography variant={"h6"} fontWeight={600}>{expertise}</Typography>
                                 <Typography>{profile.expertise[expertiseKey]?.Description}</Typography>
-                                <Container sx={{mt:1}}>
+                                <Container sx={{mt:1, px:0}} disableGutters>
                                     <Typography variant={"caption"}>Tech stack</Typography>
-                                    <Container>
+                                    <Container sx={{px:0}} disableGutters>
                                     {profile.expertise[expertiseKey].skills.map((label, index) => (
                                         <Chip key={index} label={label}  size="small" sx={{m:.5 }} />
                                     ))}
