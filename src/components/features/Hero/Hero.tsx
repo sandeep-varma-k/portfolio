@@ -5,7 +5,7 @@ import ArticleIcon from '@mui/icons-material/Article';
 import {Avatar, Stack} from "@mui/material";
 import Divider from "@mui/material/Divider";
 
-import profile from '../../data/profile.json';
+import profile from '../../../data/profile.json';
 import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 

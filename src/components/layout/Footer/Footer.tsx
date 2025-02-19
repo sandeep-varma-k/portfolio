@@ -6,7 +6,7 @@ import IconButton from "@mui/material/IconButton";
 import {Container, Stack} from "@mui/material";
 
 
-import profile from "../../data/profile.json";
+import profile from "../../../data/profile.json";
 
 const mailTo = `mailto:${profile.email}`;
 

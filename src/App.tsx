@@ -1,10 +1,10 @@
 import './App.css'
-import AppNavigation from "./components/Navigation/AppNavigation.tsx";
-import Hero from "./components/Hero/Hero.tsx";
-import Expertise from "./components/Expertise/Expertise.tsx";
-import Timeline from "./components/Timeline/Timeline.tsx";
+import AppNavigation from "./components/layout/Navigation/AppNavigation.tsx";
+import Hero from "./components/features/Hero/Hero.tsx";
+import Expertise from "./components/features/Expertise/Expertise.tsx";
+import Timeline from "./components/features/Timeline/Timeline.tsx";
 import {Container} from "@mui/material";
-import Footer from "./components/Footer/Footer.tsx";
+import Footer from "./components/layout/Footer/Footer.tsx";
 
 function App() {
 

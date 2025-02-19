@@ -4,7 +4,7 @@ import { faPeopleRoof } from '@fortawesome/free-solid-svg-icons';
 import Chip from '@mui/material/Chip';
 
 
-import profile from '../../data/profile.json';
+import profile from '../../../data/profile.json';
 import {Container, Stack} from "@mui/material";
 import Grid from '@mui/material/Grid2';
 import Typography from "@mui/material/Typography";
