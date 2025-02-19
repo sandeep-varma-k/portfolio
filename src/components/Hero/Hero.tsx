@@ -15,7 +15,7 @@ export default function Hero() {
 
     return (
 
-            <Stack spacing={1} alignItems={"center"}>
+            <Stack spacing={1} alignItems={"center"} pt={8} pb={8}>
                 <Avatar
                     alt={profile.firstName}
                     src={profile.image}
