@@ -33,7 +33,7 @@ function Expertise() {
                         // @ts-ignore
                         const icon = iconMap[profile.expertise[expertiseKey].icon];
                         return (
-                            <Grid key={index} size={{ xs: 12, md: 4 }}>
+                            <Grid key={index} size={{ xs: 12, md: 4 }} sx={{ backgroundColor: "white", p: 2, borderRadius: 2 }}>
                                 <FontAwesomeIcon icon={icon} size="3x"/>
                                 <Typography variant={"h6"} fontWeight={600}>{expertise}</Typography>
                                 <Typography>{profile.expertise[expertiseKey]?.Description}</Typography>
