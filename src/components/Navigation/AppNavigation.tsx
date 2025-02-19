@@ -13,7 +13,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import {useEffect, useState} from "react";
+
 
 
 const drawerWidth = 240;
@@ -27,27 +27,29 @@ const navItems = [
 export default function AppNavigation() {
 
     const [mobileOpen, setMobileOpen] = React.useState(false);
-    const [scrolled, setScrolled] = useState<boolean>(false);
 
     const handleDrawerToggle = () => {
         setMobileOpen((prevState) => !prevState);
     };
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const navbar = document.getElementById("navigation");
-            if (navbar) {
-                const scrolled = window.scrollY > navbar.clientHeight;
-                setScrolled(scrolled);
-            }
-        };
+    // TODO: Remove it if not needed
+    // const [scrolled, setScrolled] = useState<boolean>(false);
 
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //         const navbar = document.getElementById("navigation");
+    //         if (navbar) {
+    //             const scrolled = window.scrollY > navbar.clientHeight;
+    //             setScrolled(scrolled);
+    //         }
+    //     };
+    //
+    //     window.addEventListener('scroll', handleScroll);
+    //
+    //     return () => {
+    //         window.removeEventListener('scroll', handleScroll);
+    //     };
+    // }, []);
 
     const scrollToSection = (section: string) => {
         console.log(section)
@@ -85,7 +87,7 @@ export default function AppNavigation() {
     return (
         <Box sx={{ display: 'flex' }}>
             <CssBaseline />
-            <AppBar component="nav" id="navigation" className={`navbar-fixed-top${scrolled ? ' scrolled' : ''}`}>
+            <AppBar component="nav" id="navigation"  sx={{bgcolor: "white", color: "black"}}>
                 <Toolbar>
                     <IconButton
                         color="inherit"
@@ -106,7 +108,7 @@ export default function AppNavigation() {
                     </Typography>
                     <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                         {navItems.map((item) => (
-                            <Button key={item[0]} onClick={() => scrollToSection(item[1])} sx={{ color: '#fff' }}>
+                            <Button key={item[0]} onClick={() => scrollToSection(item[1])} sx={{ color: '#000', textTransform: 'none' }}>
                                 {item[0]}
                             </Button>
                         ))}
