@@ -13,13 +13,13 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import HomeIcon from '@mui/icons-material/Home';
 
 
-
-const drawerWidth = 240;
+const drawerWidth = 120;
 const navItems = [
     ['Expertise', 'expertise'],
-    ['History', 'history'],
+    ['Timeline', 'timeline'],
     // ['Projects', 'projects'],
     // ['Contact', 'contact']
 ];
@@ -52,28 +52,24 @@ export default function AppNavigation() {
     // }, []);
 
     const scrollToSection = (section: string) => {
-        console.log(section)
         const expertiseElement = document.getElementById(section);
         if (expertiseElement) {
             expertiseElement.scrollIntoView({ behavior: 'smooth' });
-            console.log('Scrolling to:', expertiseElement);  // Debugging: Ensure the element is found
-        } else {
-            console.error('Element with id "expertise" not found');  // Debugging: Log error if element is not found
         }
     };
 
 
 
     const drawer = (
-        <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-            <Typography variant="h6" sx={{ my: 2 }}>
+        <Box onClick={handleDrawerToggle} sx={{ textAlign: 'left' }}>
+            <Typography variant="h6" sx={{ my: 2, ml:2 }}>
                Menu
             </Typography>
             <Divider />
             <List>
                 {navItems.map((item) => (
                     <ListItem key={item[0]} disablePadding>
-                        <ListItemButton sx={{ textAlign: 'center' }} onClick={() => scrollToSection(item[1])}>
+                        <ListItemButton sx={{ textAlign: 'left' }} onClick={() => scrollToSection(item[1])}>
                             <ListItemText primary={item[0]} />
                         </ListItemButton>
                     </ListItem>
@@ -89,6 +85,8 @@ export default function AppNavigation() {
             <CssBaseline />
             <AppBar component="nav" id="navigation"  sx={{bgcolor: "white", color: "black"}}>
                 <Toolbar>
+
+                    {/*Elements visible with width of xs only - typically for mobile*/}
                     <IconButton
                         color="inherit"
                         aria-label="open drawer"
@@ -98,21 +96,34 @@ export default function AppNavigation() {
                     >
                         <MenuIcon />
                     </IconButton>
-                    <Typography
-                        variant="h6"
-                        component="div"
-                        textAlign={"left"}
-                        sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
-                    >
-                        Sandeep's Portfolio
-                    </Typography>
+                    <Box sx={{ flexGrow: 1, display: { sm: 'none' }, textAlign:'right' }}>
+                        <Button startIcon={<HomeIcon />}
+                            onClick={() => scrollToSection("home")} sx={{ color: '#000', textTransform: 'none', fontSize: 16, fontWeight: 600 }} >
+                            Home
+                        </Button>
+                    </Box>
+
+
+
+                    {/*Elements visible with width of sm and above - typically for non-mobile screens*/}
+                    <Box sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, textAlign:'left' }}>
+                            <Button startIcon={<HomeIcon />} variant={"text"}
+                                onClick={() => scrollToSection("home")} sx={{ color: '#000', textTransform: 'none', fontSize: 16, fontWeight: 600  }}>
+                                Home
+                            </Button>
+                    </Box>
                     <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                         {navItems.map((item) => (
-                            <Button key={item[0]} onClick={() => scrollToSection(item[1])} sx={{ color: '#000', textTransform: 'none' }}>
+                            <Button key={item[0]} onClick={() => scrollToSection(item[1])}
+                                    sx={{ color: '#000', textTransform: 'none', fontSize: 16, fontWeight: 600,
+
+                                        }}
+                            >
                                 {item[0]}
                             </Button>
                         ))}
                     </Box>
+
                 </Toolbar>
             </AppBar>
             <nav>

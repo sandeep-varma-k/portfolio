@@ -22,7 +22,7 @@ const iconMap: Record<IconKeys,any> = {
 
 function Timeline() {
     return (
-        <Container id="history" sx={{pt:8}}>
+        <Container id="timeline" sx={{pt:8}}>
                 <Typography variant={"h4"} pb={4}>Career Timeline</Typography>
 
                 <VerticalTimeline>
