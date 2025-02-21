@@ -55,7 +55,7 @@
     {
       "roles": [ "Senior Engineering Manager", "Senior Lead Software Engineer"],
       "type": "work",
-      "image": "/assets/images/capital_one_logo.png",
+      "image": "assets/images/capital_one_logo.png",
       "company": "Capital One",
       "location": "McLean, VA",
       "time": "Jan 2023 - Present",
@@ -65,7 +65,7 @@
     {
       "roles": ["Principal Software Engineer", "Senior Software Engineer"],
       "type": "work",
-      "image": "/assets/images/verizon_logo.png",
+      "image": "assets/images/verizon_logo.png",
       "company": "Verizon",
       "location": "Ashburn, VA",
       "time": "Dec 2019 - Dec 2022",
@@ -75,7 +75,7 @@
     {
       "roles": ["Senior Engineering Manager", "Lead Data Engineer"],
       "type": "work",
-      "image": "/assets/images/inovalon_logo.png",
+      "image": "assets/images/inovalon_logo.png",
       "company": "Inovalon",
       "location": "Bowie, MD",
       "time": "Jun 2014 - Nov 2019",
@@ -85,7 +85,7 @@
     {
       "roles": ["Senior Data Analyst"],
       "type": "work",
-      "image": "/assets/images/wallet_hub_logo.png",
+      "image": "assets/images/wallet_hub_logo.png",
       "company": "WalletHub",
       "location": "Washington D.C.",
       "time": "June 2013 - May 2014",
@@ -95,7 +95,7 @@
     {
       "roles": ["Masters in Business Administration"],
       "type": "study",
-      "image": "/assets/images/umd_bschool_logo.png",
+      "image": "assets/images/umd_bschool_logo.png",
       "company": "University of Maryland",
       "location": "College Park, MD",
       "time": "Aug 2012 - May 2014",
@@ -105,7 +105,7 @@
     {
       "roles": ["Software Engineer"],
       "type": "work",
-      "image": "/assets/images/tcs_logo.png",
+      "image": "assets/images/tcs_logo.png",
       "company": "Tata Consultancy Services",
       "location": "Chennai, India",
       "time": "Jun 2010 - Jun 2012",
@@ -115,7 +115,7 @@
     {
       "roles": ["Bachelors in Computer Science Engineering"],
       "type": "study",
-      "image": "/assets/images/sastra_logo.png",
+      "image": "assets/images/sastra_logo.png",
       "company": "SASTRA University",
       "location": "Tamilnadu, India",
       "time": "Jun 2006 - May 2010",
