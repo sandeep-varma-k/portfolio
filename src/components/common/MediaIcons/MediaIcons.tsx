@@ -15,19 +15,19 @@ function MediaIcons() {
         <Container sx={{textAlign: "center"}}>
             <Stack direction={"row"} sx={{ color: "black", alignItems: "center", justifyContent: "center" }} spacing={1}>
                 <IconButton aria-label="Linkedin.com" href={profile.linkedin} target="_blank" rel="noreferrer">
-                    <LinkedInIcon fontSize="medium" sx={{ color: "black" }}/>
+                    <LinkedInIcon fontSize="medium" />
                 </IconButton>
 
                 <IconButton aria-label="Linkedin.com" href={profile.github} target="_blank" rel="noreferrer">
-                    <GitHubIcon fontSize="medium" sx={{ color: "black" }}/>
+                    <GitHubIcon fontSize="medium"/>
                 </IconButton>
 
                 <IconButton aria-label="Linkedin.com" href={mailTo} target="_blank" rel="noreferrer">
-                    <MailIcon fontSize="medium" sx={{ color: "black" }}/>
+                    <MailIcon fontSize="medium" sx={{ color: "#FF6347" }}/>
                 </IconButton>
 
                 <IconButton aria-label="Linkedin.com" href={profile.resume} target="_blank" rel="noreferrer">
-                    <ArticleIcon fontSize="medium" sx={{ color: "black" }}/>
+                    <ArticleIcon fontSize="medium" sx={{ color: "#FF6347" }}/>
                 </IconButton>
             </Stack>
         </Container>

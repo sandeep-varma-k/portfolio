@@ -32,25 +32,6 @@ export default function AppNavigation() {
         setMobileOpen((prevState) => !prevState);
     };
 
-    // TODO: Remove it if not needed
-    // const [scrolled, setScrolled] = useState<boolean>(false);
-
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //         const navbar = document.getElementById("navigation");
-    //         if (navbar) {
-    //             const scrolled = window.scrollY > navbar.clientHeight;
-    //             setScrolled(scrolled);
-    //         }
-    //     };
-    //
-    //     window.addEventListener('scroll', handleScroll);
-    //
-    //     return () => {
-    //         window.removeEventListener('scroll', handleScroll);
-    //     };
-    // }, []);
-
     const scrollToSection = (section: string) => {
         const expertiseElement = document.getElementById(section);
         if (expertiseElement) {

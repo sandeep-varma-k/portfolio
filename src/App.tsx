@@ -9,7 +9,7 @@ import Footer from "./components/layout/Footer/Footer.tsx";
 function App() {
 
   return (
-    <Container>
+    <Container disableGutters maxWidth={false}>
         <AppNavigation />
         <Hero />
         <Expertise />

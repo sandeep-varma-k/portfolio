@@ -1,0 +1,21 @@
+.hero {
+  background: rgb(2,0,36);
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(14,192,228,1) 0%, rgba(245,244,244,1) 98%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-align: center;
+  /*font-size: 1rem;*/
+}
+
+.hr {
+  border: 1px solid black !important;
+}
+
+.hero svg{
+  fill: #FF6347 !important;
+}
